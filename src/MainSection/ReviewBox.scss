@@ -1,0 +1,65 @@
+.review-box {
+    position: relative;
+    background-color: white;
+    padding: 1.5rem 2rem 1.5rem;
+    &-text {
+        font-size: var(--main-text-font-size);
+        font-weight: 400;
+        text-align: left;
+        margin-top: 0;
+        margin-bottom: 0.7rem;
+        line-height: 1.6;
+    }
+    &-profile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-user {
+            display: flex;
+            align-items: center;
+            &-img {
+                width: 25%;
+                height: 25%;
+                border-radius: 50%;
+                object-fit: cover;
+                margin-right: 7%;
+            }
+            &-username,
+            &-reviewdate {
+                text-align: left;
+            }
+            &-username {
+                text-transform: uppercase;
+                font-size: 0.7rem;
+                font-weight: 400;
+                color: var(--color-grey-dark-1);
+                &-box {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+            &-reviewdate {
+                font-size: 0.625rem;
+                margin-top: 0;
+            }
+        }
+        &-reviewpoints {
+            font-size: 1.375rem;
+            color: var(--color-primary-pink);
+        }
+    }
+    &-quotes {
+        position: absolute;
+        top: 0.1rem;
+        left: -0.5rem;
+        width: 2.5rem;
+        height: 2.5rem;
+        fill: var(--color-grey-light-2);
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .review-box {
+        margin-bottom: 2rem;
+    }
+}

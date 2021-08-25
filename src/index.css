@@ -1,0 +1,67 @@
+:root {
+    --color-primary-pink: #eb2f64;
+    --color-primary-pink-light: #FF3366;
+    --color-primary-pink-dark: #BA265D;
+    --color-grey-light-1: #faf9f9;
+    --color-grey-light-2: #f4f2f2;
+    --color-grey-light-3: #f0eeee;
+    --color-grey-light-4: #ccc;
+    --color-grey-dark-1: #333;
+    --color-grey-dark-2: #777;
+    --color-grey-dark-3: #999;
+    --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+    --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+    --line: 1px solid var(--color-grey-light-2);
+    --main-text-font-size: 0.875rem;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+button,
+img,
+a {
+    cursor: pointer;
+}
+
+button,
+form>* {
+    font-family: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 80px 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: linear-gradient(to left, var(--color-primary-pink), var(--color-primary-pink-light));
+    background-repeat: no-repeat;
+    overflow-y: scroll;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+@media only screen and (max-width: 75em) {
+    body {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 68.75em) {
+    html {
+        font-size: 87.5%;
+    }
+}
+
+@media only screen and (max-width: 31.25em) {
+    html {
+        font-size: 75%;
+    }
+}

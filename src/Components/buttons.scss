@@ -1,0 +1,12 @@
+@import '../abstract/mixins';
+.pink-button {
+    color: var(--color-primary-pink);
+    font-size: 0.75rem;
+    border: none;
+    background: none;
+    font-family: "Arial", sans-serif;
+    margin-right: 1.5rem;
+    &::after {
+        @include after-line;
+    }
+}
